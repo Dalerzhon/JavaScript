@@ -1,0 +1,37 @@
+
+.container {
+    padding: 20px;
+    margin: 20px auto;
+    
+     
+}
+
+.progressBar {
+    height: 20px;
+    max-width: 500px;
+    width: 100%;
+    /* margin: 20px auto; */
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+.progressEl {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #4a90e2, #357abd);
+    transform-origin: left;
+    transform: scaleX(0); /*Старт с 0*/
+    transition: transform 0.05s linear;
+}
+
+.timerEl {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+
+    /* margin: 20px 200px; */
+}

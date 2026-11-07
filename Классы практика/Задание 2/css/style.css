@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: rgb(220, 223, 223);
+}
+
+.app {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+
+    position: fixed;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+
+    position: relative;
+}
+
+.card__edit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;    
+    padding: 4px 8px;
+
+    background-color: white;
+    color: rgb(101, 101, 236);
+    border: 0.6px solid rgb(101, 101, 236);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card__edit-btn:hover {
+    background-color: rgb(101, 101, 236);
+    color: white;
+}
+
+.card__name {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card__address {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card__distance {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+/* Стилизация лейбла */
+.card__name-lab, .card__address-lab, .card__distance-lab {
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: gray;
+}
+
+/* Кнопка закрытия попапа */
+.closeBtnEl {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
+.overlayWrapEl-style {   
+    display: none;
+    position: absolute;  
+    
+    padding: 20px;
+    background-color: white;    
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Поверх всего */
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+}
+
+.overlayWrapEl-style.open {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .overlayWrapEl-style.open .app {
+    background-color: gray;
+    backdrop-filter: blur(10px);
+} */
+
+/* Форма */
+.formEl {
+    display: flex;
+    flex-direction: column;
+}
+
+.formElemetn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: 0.6px solid gray;
+}
+
+.submitBtnEl {
+    background-color: blue;
+    color: white;
+}
+
+.blurContainerEl {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: gray;
+    opacity: 0.2;
+}
+
+/* При открытии попапа экран накрываем блуром */
+.blurContainerEl.open {
+    display: flex;
+}
+
+.statusCanceled {
+    background-color: rgb(244, 242, 242);    
+}
+
+.statusDelivered {
+    border: 4px solid green;
+}
+
+.statusDelivery {
+
+}

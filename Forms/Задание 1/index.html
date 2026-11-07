@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Форма опроса</h1>
+    <form class="form" action="#">
+        <div>
+            <label for="name">Имя пользователя:</label>
+            <input type="text" id="name" name="name" required >
+        </div>
+        
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="gender">Пол:</label>            
+            <input type="radio" id="male" name="gender" value="Мужской">
+            <label for="male">Мужcкой</label>            
+            <input type="radio" id="female" name="gender" value="Женский">
+            <label for="female">Женский</label>
+        </div>
+        <div>
+            <label for="volume">Оценка сервиса:</label>
+            <input type="range" id="volume" name="volume" min="0" max="10" value="5">
+            <output for="volume" id="volumeValue">5</output>
+        </div>
+        <div>
+            <legend>Интересы пользователя:</legend>
+            <div>
+                <input type="checkbox" id="sport" name="interests" value="спорт">
+                <label for="sport">Спорт:</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="interests" value="музыка">
+                <label for="music">Музыка:</label>
+            </div>
+            <div>
+                <input type="checkbox" id="travel" name="interests" value="путушествия">
+                <label for="travel">Путешествие:</label>
+            </div>  
+            <div>
+                <input type="checkbox" id="film" name="interests" value="кино"> 
+                <label for="film">Кино:</label> 
+            </div>                                     
+        </div>
+        <div>
+            <legend>Дополнительные комментарии:</legend>
+            <textarea class="comment" type="textarea" id="comment" name="comment"></textarea>
+        </div>
+        <div>
+            <input type="submit">           
+        </div>    
+    </form>
+    
+    <div class="resultContainer">
+        
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

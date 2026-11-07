@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(193, 193, 226);
+}
+.card {
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(193, 193, 226); */
+}
+
+.wrapCentre {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainTitle {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.textField {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.select {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.textField:focus {
+    outline: none; /* Убираем стандартную синюю рамку браузера */
+    border: 2px solid blue; /* Добавляем свою рамку (цвет и толщина) */
+    /* box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); Можно добавить свечение */
+}
+
+.button {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    /* margin-bottom: 20px; */
+    border: none;
+    background-color: rgb(27, 141, 180);
+    color: white;
+   
+}
+
+.button:hover {
+    background-color: rgb(102, 166, 188);
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+table {
+    max-width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px #999;
+}
+  
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+th:hover {
+    background-color: #959191;
+}
+
+td {
+    vertical-align: top;
+}
+
+.table {
+    width: 100%;
+}
+
+.btn {
+    max-width: 100%;
+    padding: 5px 20px;
+    /* font-size: 16px; */
+    border-radius: 20px;    
+    border: none;
+    background-color: rgb(203, 37, 37);
+    color: white;
+}
+
+.removeRowBtn:hover {
+    background-color: rgb(221, 84, 84);
+}
+
+.editRowBtn:hover {
+    background-color: rgb(221, 84, 84);
+}
+
+#btnEdit {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none
+}
+
+
+.loader {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+.loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid rgb(27, 141, 180);
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(27, 141, 180) transparent transparent transparent;
+}
+.loader div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.loader div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.loader div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

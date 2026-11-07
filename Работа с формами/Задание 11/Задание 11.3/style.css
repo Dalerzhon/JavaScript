@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+.container {    
+    max-width: 50%;
+
+}
+.cardBlock {
+    padding: 5px;
+    margin-top: 10px;
+}
+.nameSurname {
+    padding: 5px;
+}
+.selectColor {
+    padding: 5px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 160px;
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.redColor {
+    background-color: red;    
+}
+.blueColor {
+    background-color: blue;   
+}.greenColor {
+    background-color: green;    
+}

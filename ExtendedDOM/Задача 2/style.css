@@ -1,0 +1,11 @@
+.wrapEl {
+    display: flex;
+    justify-content: center;
+}
+.addBtnStyle {
+    padding: 5px;   
+}
+.removeBtnStyle {
+    padding: 5px;
+    margin-left: 5px;
+}

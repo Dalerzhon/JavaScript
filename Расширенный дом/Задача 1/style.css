@@ -1,0 +1,21 @@
+.wrapElStyle {
+    display: flex;
+    justify-content: center; 
+}
+.imgContainerStyle {
+    background-color: black;
+}
+.img {
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+}
+.imgContainerBigStyle {
+    width: 100%;
+    height: 460px;
+}
+.imgBigStyle {
+    width: 70%px;
+    height: 400px;
+    padding: 10px;
+}

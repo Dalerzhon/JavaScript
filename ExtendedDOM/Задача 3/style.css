@@ -1,0 +1,11 @@
+.wrapEl {
+    display: flex;
+    justify-content: center;
+}
+.sortAscendingBtnStyle {
+    padding: 5px;   
+}
+.sortDescendingBtnStyle {
+    padding: 5px;
+    margin-left: 5px;
+}
